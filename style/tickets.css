@@ -65,3 +65,16 @@
 .tickets__table::-webkit-scrollbar-track {
   background-color: #0C1417;
 }
+
+@media (min-width: 768px) {
+	.table__header > tr > th {
+		padding-right: 10px;
+	}
+	.table__body > tr > td {
+		font-size: 14px;
+	}
+	.table__body > tr > td  {
+		text-align: center;
+		padding-right: 10px;
+	}
+}
