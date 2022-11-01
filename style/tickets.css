@@ -1,8 +1,14 @@
-
-.tikets__title {
+.tickets {
+	background: url(../img/content/tickets__bg-phone.png) no-repeat;
+	background-position: right 95%;
+}
+.tickets__main-title {
 	text-align: center;
 	margin-top: 80px;
 	margin-bottom: 60px;
+	font-size: 25px;
+	font-family: "Montserrat-Bold";
+	font-weight: 700;
 }
 
 .tickets__table {
@@ -11,7 +17,7 @@
 	display: block;
 	
 	overflow-x: scroll;
-	
+
 }
 
 .table__header > tr > th {
@@ -63,12 +69,18 @@
 }
 
 .tickets__table::-webkit-scrollbar-track {
-  background-color: #0C1417;
+	background-color: #000;
 }
-
+.tickets__title{
+	margin-top: 60px;
+	text-align: center;
+	font-size: 20px;
+	font-family: "Montserrat-Bold";
+	font-weight: 700;
+}
 @media (min-width: 768px) {
 	.table__header > tr > th {
-		padding-right: 10px;
+		padding-right: 5px;
 	}
 	.table__body > tr > td {
 		font-size: 14px;
@@ -76,5 +88,73 @@
 	.table__body > tr > td  {
 		text-align: center;
 		padding-right: 10px;
+	}
+	.tickets__table {
+		overflow-x:hidden;		
+	}
+	.tickets__main-title {
+		font-size: 30px;
+	}
+	.tickets {
+		background: url("../img/content/tickets__bg_tablet.png") no-repeat;
+		background-position: right 103%;
+	}
+	.tickets__title{
+		margin-top: 90px;
+		font-size: 24px;
+	}
+}
+@media (min-width: 1024px) {
+	.table__body > tr > td:first-child {
+		white-space: normal;
+	}
+	.table__body > tr > td {
+		font-size: 16px;
+	}
+	.table__header > tr > th {
+		padding-right: 16px;
+	}
+	.table__body > tr > td  {
+		text-align: center;
+		padding-right: 25px;
+	}
+}
+@media (min-width: 1366px) {
+	.tickets__main-title {
+		margin-bottom: 80px;
+	}
+	.table__body > tr > td:first-child {
+		white-space: normal;
+	}
+	.table__header > tr > th {
+		padding-right: 96px;
+	}
+	.table__body > tr > td  {
+		text-align: center;
+		padding-right: 105px;
+	}
+	.tickets {
+		background: url("../img/content/tickets__bg_desktop.png") no-repeat;
+		background-position: right 115%;
+	}
+	.tickets__title{
+		margin-top: 100px;
+	}
+}
+
+@media (min-width: 1920px) {
+	.table__header > tr > th {
+		font-size: 18px;
+	}
+	.table__body > tr > td:first-child {
+		white-space: nowrap;
+	}
+	.tickets__table {
+		width: 1460px;
+		margin: auto;
+	}
+	.tickets {
+		background: url("../img/content/tickets__bg_desktop.png") no-repeat;
+		background-position: right 100%;
 	}
 }
