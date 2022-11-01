@@ -1,0 +1,142 @@
+.gallery {
+	background-color: #0C1417;
+	padding: 45px 0 80px;
+	background: url("../img/content/gallery-bg.png") no-repeat #0C1417;
+	background-position: left 104%;
+}
+
+
+
+
+.gallery__title {
+	text-align: center;
+	font-family: "Montserrat-Bold";
+	color: white;
+	font-size: 30px;
+	font-weight: 700;
+	margin-bottom: 80px;
+}
+.gallery__team-helper {
+	position: relative;
+	margin-bottom: 45px;
+}
+.gallery__room-helper {
+	position: relative;
+}
+
+.gallery__team-image-wrapper {
+	width: 200px;
+	margin: auto;
+}
+.gallery__room-image-wrapper {
+	margin: auto;
+}
+.top-scrollbar {
+	margin: 30px auto 0;
+	height: 10px;
+	background-color: white;
+	width: 290px;
+	
+}
+.bottom-scrollbar {
+	margin: 30px auto 0;
+	height: 10px;
+	background-color: white;
+	width: 290px;
+}
+.top-scrollbar  .swiper-scrollbar-drag {
+	margin-top: 30px;
+	background-color: #F7931E;
+	border-radius: 0px;
+	height: 10px;
+	width: 102px;
+}
+.bottom-scrollbar  .swiper-scrollbar-drag {
+	margin-top: 30px;
+	background-color: #F7931E;
+	border-radius: 0px;
+	height: 10px;
+	width: 102px;
+	
+}
+.gallery__team-button-prev, .gallery__team-button-next, .gallery__room-button-prev, .gallery__room-button-next  {
+	position: absolute;
+	display: none;
+	cursor: pointer;
+	z-index: 5;
+}
+.gallery__team-button-prev {
+	left: 0;
+}
+.gallery__team-button-next {
+	right: 0;
+}
+
+.gallery__room-helper {
+	position: relative;
+}
+
+.gallery__room-image-wrapper {
+	width: 225px;
+}
+@media (min-width: 768px) {
+	.gallery__team-image-wrapper {
+		width: 306px;
+	}
+	.top-scrollbar, .bottom-scrollbar {
+		width: 482px;
+		margin: auto;
+	}
+	.gallery__room-image-wrapper {
+		width: 422px;
+	}
+	.gallery {
+		background: url("../img/content/gallery-bg-tablet.png") no-repeat #0C1417;
+		background-position: left 105%;
+	}
+}
+
+@media (min-width: 1024px) {
+	.gallery__team-image-wrapper {
+		width: 230px;
+	}
+	.gallery__room-image-wrapper {
+		width: 361px;
+	}
+	.gallery__team-button-prev, .gallery__team-button-next {
+		display: block;
+		top: calc(((320px / 2) - 20px));
+	}
+	.gallery__room-button-prev, .gallery__room-button-next {
+		display: block;
+		top: calc(((300px / 2) - 20px));
+	}
+	.gallery__team-button-prev, .gallery__room-button-prev{
+		margin-left: -20px;
+		
+	}
+	.gallery__team-button-next, .gallery__room-button-next{
+		margin-right: -20px;
+		right: 0;
+	}
+	
+}
+
+@media (min-width: 1366px) {
+	.gallery__team-image-wrapper {
+		width: 267px;
+	}
+	.gallery__team-button-prev, .gallery__team-button-next {
+		top: calc(((372px / 2) - 20px));
+	}
+	.top-scrollbar, .bottom-scrollbar {
+		width: 1000px;
+		margin: auto;
+	}
+	.gallery__team-button-prev{
+		margin-left: -10px;
+	}
+	.gallery__team-button-next{
+		margin-right: -10px;
+	}
+}

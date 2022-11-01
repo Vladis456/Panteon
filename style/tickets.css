@@ -1,0 +1,67 @@
+
+.tikets__title {
+	text-align: center;
+	margin-top: 80px;
+	margin-bottom: 60px;
+}
+
+.tickets__table {
+	white-space: nowrap;
+	border-collapse: collapse;
+	display: block;
+	
+	overflow-x: scroll;
+	
+}
+
+.table__header > tr > th {
+	padding-right: 60px;
+	text-align: center;
+	font-family: "Montserrat-Bold";
+	font-weight: 700;
+	border-bottom: 1px solid black;
+	padding-bottom: 20px;
+}
+.table__header > tr > th:first-child {
+	font-family: "Montserrat-Medium";
+	font-weight: 500;
+}
+.table__header > tr > th:last-child {
+	padding-right: 0px;
+}
+.table__body > tr:first-child > td{
+	padding-top: 32px;
+	padding-bottom: 20px;
+}
+.table__body > tr:last-child > td{
+	padding-top: 20px;
+	padding-bottom: 15px;
+}
+.table__body > tr > td  {
+	text-align: center;
+	padding-right: 70px;
+}
+.table__body > tr > td:first-child {
+	font-family: "Montserrat-Bold";
+	font-weight: 700;
+	
+	white-space: normal;
+	text-align: start;
+}
+.table__body > tr > td:last-child {
+	padding-right: 0;
+}
+
+.tickets__table::-webkit-scrollbar {
+  background-color: #F7931E;
+	height: 10px;
+}
+
+.tickets__table::-webkit-scrollbar-thumb {
+  background-color: #F7931E;
+	height: 20px;
+}
+
+.tickets__table::-webkit-scrollbar-track {
+  background-color: #0C1417;
+}

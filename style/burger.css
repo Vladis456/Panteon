@@ -1,0 +1,23 @@
+
+.burger > span, .burger > span::after, .burger > span::before{
+	width: 19px;
+	height: 3px;
+	position: absolute;
+	border-radius: 4px;
+	background-color: #fff;
+}
+.burger > span {
+	top: 40px;
+	right: 15px;
+}
+.burger > span::after {
+	content: '';
+	top: 7px;
+}
+.burger > span::before {
+	content: '';
+	top: 14px;
+}
+.burger__items {
+	display: none;
+}

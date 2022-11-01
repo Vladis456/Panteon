@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link rel="stylesheet" href="style/normalize.css">
+	<link rel="stylesheet" href="lib/swiper-bundle.min.css">
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/css/swiper.min.css">
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/js/swiper.min.js"></script>
+
+	<link rel="stylesheet" href="style/index.css">
+
+	
+</head>
+<body>
+	<header class="header">
+		
+		<div class="container">
+			<div class="header__items">
+				
+				
+				<nav class="header__nav nav">
+					<img class="header__logo" src="img/icons/panteon__logo.svg">
+					<p class="header__number">+7 (496) 416-19-16</p>
+					<div class="nav__burger burger">
+						<span></span>
+						<ul class="burger__items">
+							<li class="burger__item"><a href="#coaches" class="nav__link">Тренеры</a></li>
+							<li class="burger__item"><a href="#contacts" class="nav__link">Контакты</a></li>
+							<li class="burger__item"><a href="#contacts" class="nav__link">+7 (496) 416-19-16</a></li>
+							<li class="burger__item"><a href="#about-us" class="nav__link">О нас</a></li>
+							<li class="burger__item"><a href="#gallery" class="nav__link">Галерея</a></li>
+							<li class="burger__item"><a href="#tickets" class="nav__link">Абонементы</a></li>
+						</ul>
+					</div>
+					<ul class="nav__items">
+						<li class="nav__item"><a href="#about-us" class="nav__link">О нас</a></li>
+						<li class="nav__item"><a href="#gallery" class="nav__link">Галерея</a></li>
+						<li class="nav__item"><a href="#tickets" class="nav__link">Абонементы</a></li>
+						<li class="nav__item"><a href="#coaches" class="nav__link">Тренеры</a></li>
+						<li class="nav__item"><a href="#contacts" class="nav__link">Контакты</a></li>
+					</ul>
+				</nav>
+			</div>
+			<h1 class="header__title">Фитнес клуб Пантеон</h1>
+			<h3 class="header__subtitle">Лучше нас только боги</h3>
+			<button class="header__consultation-btn"><a href="#consultation"><img src="img/content/Frame 7.png"></a></button>
+			
+			<div class="header__btns">
+				<button class="header__arrow-btn"><a href="#about-us"><img src="img/icons/eva_arrow-ios-upward-fill.svg"></a></button>
+				<div class="header__socials social">
+					<a class="social__link" href="#"><img src="img/icons/fontisto_instagram.svg" class="social__img" width="22px"></a>
+					<a class="social__link" href="#"><img src="img/icons/fontisto_vk.svg" class="social__img" width="22px"></a>
+				</div>
+				
+			</div>
+		</div>
+	</header>
+	<main>
+		<section class="about-us" id="about-us">
+			<div class="container">
+				<div class="about-us__wrapper">
+					<div class="about-us__text">
+						<h2 class="about-us__title">Новый образ жизни</h2>
+						<p class="about-us__info">Став частью нашей команды, вы сможете изменить привычный ритм жизни и сделать каждый свой день особенным, а формат наших тренировок позволит вам раскрыть потенциал вашего тела на 100%.</p>
+						<button class="about-us__consultation-btn"><a href="#consultation"><img src="img/content/Кнопка.png"></a></button>
+					</div>
+					<div class="about-us__images">
+						<picture>
+							<source media="(max-width: 767px)" srcset="img/content/about-us-img1.jpg">
+							<source media="(max-width: 1439px)" srcset="img/content/about-us-img1_768.jpg">
+							<img src="img/content/about-us-img1.jpg">
+						</picture>
+						<picture>
+							<source media="(max-width: 767px)" srcset="img/content/about-us-img2.jpg">
+							<source media="(max-width: 1439px)" srcset="img/content/about-us__image2_768.jpg">
+							<img src="img/content/about-us-img2.jpg">
+						</picture>
+					</div>
+				
+				
+				</div>
+				<div class="about-us__advantages advantages">
+					<ul class="advantages__items advantage">
+						<li class="advantage__item">
+							<img src="img/icons/stationary-bike.svg" class="advantage__img">
+							<p class="advantage__text">Полностью укомплектованный зал</p>
+						</li>
+						<li class="advantage__item">
+							<img src="img/icons/location.svg"  class="advantage__img">
+							<p class="advantage__text">Удобное расположение в центре города</p>
+						</li>
+						<li class="advantage__item">
+							<img src="img/icons/dumbbell.svg" class="advantage__img">
+							<p class="advantage__text">Профессиональное оборудование</p>
+						</li>
+						<li class="advantage__item">
+							<img src="img/icons//wallet.svg" class="advantage__img">
+							<p class="advantage__text">Доступная стоимость занятий</p>
+						</li>
+					</ul>
+				</div>
+			</div>
+			
+		</section>
+		<section class="gallery" id="gallery">
+			<div class="container">
+				<h2 class="gallery__title">Галерея</h2>
+				<div class="gallery__team-helper">
+					<div class="gallery__team-slider swiper">
+						<ul class="slider__list swiper-wrapper">
+							<li class="swiper-slide">
+								<div class="gallery__team-image-wrapper">
+									<img src="img/content/gallery-img-top1.jpg" alt="" class="gallery__img">
+								</div>
+							</li>
+							<li class="swiper-slide">
+								<div class="gallery__team-image-wrapper">
+									<img src="img/content/gallery-img-top2.jpg" alt="" class="gallery__img">
+								</div>
+							</li>
+							<li class="swiper-slide">
+								<div class="gallery__team-image-wrapper">
+									<img src="img/content/gallery-img-top3.jpg" alt="" class="gallery__img">
+								</div>
+							</li>
+							<li class="swiper-slide">
+								<div class="gallery__team-image-wrapper">
+									<img src="img/content/gallery-img-top4.jpg" alt="" class="gallery__img">
+								</div>
+							</li>
+							<li class="swiper-slide">
+								<div class="gallery__team-image-wrapper">
+									<img src="img/content/gallery-img-top1.jpg" alt="" class="gallery__img">
+								</div>
+							</li>
+							<li class="swiper-slide">
+								<div class="gallery__team-image-wrapper">
+									<img src="img/content/gallery-img-top2.jpg" alt="" class="gallery__img">
+								</div>
+							</li>
+							<li class="swiper-slide">
+								<div class="gallery__team-image-wrapper">
+									<img src="img/content/gallery-img-top3.jpg" alt="" class="gallery__img">
+								</div>
+							</li>
+							<li class="swiper-slide">
+								<div class="gallery__team-image-wrapper">
+									<img src="img/content/gallery-img-top4.jpg" alt="" class="gallery__img">
+								</div>
+							</li>
+							
+						</ul>
+					</div>
+					<div class="swiper-scrollbar top-scrollbar"></div>
+					<button class="gallery__team-button-prev">
+						<img src="img/icons/bi_arrow-left.svg">
+					</button>
+					<button class="gallery__team-button-next">
+						<img src="img/icons/arrow-right.svg">
+					</button>
+				</div>
+				<div class="gallery__room-helper">
+					<div class="gallery__room-slider swiper">
+						<ul class="gallery__room-list swiper-wrapper">
+							<li class="swiper-slide">
+								<div class="gallery__room-image-wrapper">
+									<img src="img/content/gallery-img-bottom1.jpg">
+								</div>
+							</li>
+							<li class="swiper-slide">
+								<div class="gallery__room-image-wrapper">
+									<img src="img/content/gallery-img-bottom2.jpg">
+								</div>
+							</li>
+							<li class="swiper-slide">
+								<div class="gallery__room-image-wrapper">
+									<img src="img/content/gallery-img-bottom3.jpg">
+								</div>
+							</li>
+							<li class="swiper-slide">
+								<div class="gallery__room-image-wrapper">
+									<img src="img/content/gallery-img-bottom1.jpg">
+								</div>
+							</li>
+							<li class="swiper-slide">
+								<div class="gallery__room-image-wrapper">
+									<img src="img/content/gallery-img-bottom2.jpg">
+								</div>
+							</li>
+							<li class="swiper-slide">
+								<div class="gallery__room-image-wrapper">
+									<img src="img/content/gallery-img-bottom3.jpg">
+								</div>
+							</li>
+						</ul>
+					</div>
+					<div class="swiper-scrollbar bottom-scrollbar">
+
+					</div>
+					<button class="gallery__room-button-prev">
+						<img src="img/icons/bi_arrow-left.svg">
+					</button>
+					<button class="gallery__room-button-next">
+						<img src="img/icons/arrow-right.svg">
+					</button>
+				</div>
+
+				</div>
+			</div>
+		</section>
+		<section class="tickets" id="tickets">
+			<div class="container">
+				<h2 class="tikets__title">Абонементы</h2>
+				<table class="tickets__table table" cellspacing = "29">
+					<thead class="table__header">
+						<tr><th>Кол-во занятий</th><th>1 тренировка</th><th>4 тренировки</th><th>8 тренировок</th><th>12 тренировок</th></tr>
+					</thead>
+					<tbody class="table__body">
+						<tr><td>Персональный тренинг с инструктором</td><td>700 руб.</td><td>2600 руб.<br>(действителен в<br>течении 3 недель)</td><td>5200 руб.<br>(действителен в<br>течении 6 недель)</td><td>7200 руб.<br>(действителен в<br>течении 10 недель)</td></tr>
+						<tr><td>Самостоятельные тренировки в тренажерном зале</td><td>250 руб.</td><td>—</td><td>1500 руб.<br>(действителен в<br>течении 30 дней)</td><td>2000 руб.<br>(действителен в<br>течении 30 дней)</td></tr>
+						<tr><td>Зал групповых программ</td><td>300 руб.</td><td>—</td><td>2000 руб.<br>(действителен в<br>течении 30 дней</td><td>2750 руб.<br>(действителен в<br>течении 45 дней)</td></tr>
+					</tbody>
+				</table>
+			</div>
+			
+		</section>
+
+	</main>
+	<script src="scripts/index.js" type="module"></script>
+</body>
+</html>
