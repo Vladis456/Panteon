@@ -1,8 +1,8 @@
 .tickets {
 	background: url(../img/content/tickets__bg-phone.png) no-repeat;
-	background-position: right 95%;
+	background-position: right 24%;
 }
-.tickets__main-title {
+.tickets__title {
 	text-align: center;
 	margin-top: 80px;
 	margin-bottom: 60px;
@@ -15,9 +15,7 @@
 	white-space: nowrap;
 	border-collapse: collapse;
 	display: block;
-	
 	overflow-x: scroll;
-
 }
 
 .table__header > tr > th {
@@ -71,13 +69,82 @@
 .tickets__table::-webkit-scrollbar-track {
 	background-color: #000;
 }
-.tickets__title{
+
+.tickets__cards {
 	margin-top: 60px;
+	margin-bottom: 80px;
+}
+
+.cards__title {
 	text-align: center;
 	font-size: 20px;
+	font-weight: 700;
+	font-family: "Montserrat-Bold";
+	margin-bottom: 45px;
+}
+.cards__list {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+.card__item {
+	box-shadow: 0px 4px 40px rgba(0, 0, 0, 0.08);
+	display: flex;
+	/* justify-content: center; */
+	flex-direction: column;
+	align-items: center;
+}
+.card__title {
+	margin: auto;
+	width: 220px;
+	text-align: center;
+	margin-top: 30px;
+	margin-bottom: 38px;
 	font-family: "Montserrat-Bold";
 	font-weight: 700;
+	line-height: 24px;
 }
+.card__time {
+	display: flex;
+	align-items: center;
+	gap: 24px;
+	margin-bottom: 38px;
+}
+.time__duration, .card__amount {
+	font-size: 15px;
+	color: rgba(12, 20, 23, .5);
+	text-align: center;
+	line-height: 20px;
+}
+.card__item:nth-child(3) .time__duration{
+	width: 149px;
+}
+.card__price {
+	font-family: "Montserrat-Bold";
+	font-size: 24px;
+	font-weight: 700;
+	margin-bottom: 15px;
+}
+.card__amount {
+	margin-bottom: 15px;
+}
+.card__button {
+	padding: 15px 48px;
+	border: 1px solid #F7931E;
+	transform: skew(-12deg);
+	font-weight: 700;
+	font-family: "Montserrat-Bold";
+	color: #F7931E;
+	margin-bottom: 30px;
+}
+.card__item:hover .card__button{
+	color: #fff;
+	background-color: #F7931E;
+}
+.card__item:hover .card__title{
+	color: #F7931E;
+}
+
 @media (min-width: 768px) {
 	.table__header > tr > th {
 		padding-right: 5px;
@@ -92,16 +159,28 @@
 	.tickets__table {
 		overflow-x:hidden;		
 	}
-	.tickets__main-title {
+	.tickets__title {
 		font-size: 30px;
 	}
 	.tickets {
 		background: url("../img/content/tickets__bg_tablet.png") no-repeat;
-		background-position: right 103%;
+		background-position: right 38%;
 	}
-	.tickets__title{
-		margin-top: 90px;
+	.cards__title {
 		font-size: 24px;
+	}
+	.cards__list {
+		flex-direction: row;
+		justify-content: space-between;
+	}
+	.card__title {
+		height: 72px;
+	}
+	.card__time {
+		height: 60px;
+	}
+	.tickets__cards {
+		margin-top: 80px;
 	}
 }
 @media (min-width: 1024px) {
@@ -118,9 +197,13 @@
 		text-align: center;
 		padding-right: 25px;
 	}
+	.cards__list {
+		justify-content: center;
+		gap: 30px;
+	}
 }
 @media (min-width: 1366px) {
-	.tickets__main-title {
+	.tickets__title {
 		margin-bottom: 80px;
 	}
 	.table__body > tr > td:first-child {
@@ -135,10 +218,13 @@
 	}
 	.tickets {
 		background: url("../img/content/tickets__bg_desktop.png") no-repeat;
-		background-position: right 115%;
+		background-position: right 30%;
 	}
-	.tickets__title{
-		margin-top: 100px;
+	.card__item {
+		width: 308px;
+	}
+	.tickets__cards {
+		margin-top: 90px;
 	}
 }
 
@@ -155,6 +241,24 @@
 	}
 	.tickets {
 		background: url("../img/content/tickets__bg_desktop.png") no-repeat;
-		background-position: right 100%;
+		background-position: right 10%;
 	}
+	.card__item:nth-child(1) .card__title{
+		width: auto;
+	}
+	.card__title {
+		height: auto;
+	}
+	.card__time {
+		flex-direction: column-reverse;
+		gap: 30px;
+		height: 84px;
+	}
+	.card__amount {
+		margin-bottom: 30px;
+	}
+	.card__item:nth-child(3) .time__duration{
+		width: auto;
+	}
+	
 }
