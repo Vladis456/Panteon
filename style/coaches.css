@@ -1,0 +1,108 @@
+.coaches {
+	background-color: #0C1417;
+	padding-bottom: 70px;
+}
+.coaches__title {
+	padding-top: 80px;
+	padding-bottom: 60px;
+	color: #fff;
+	font-family: "Montserrat-Bold";
+	font-weight: 700;
+	font-size: 25px;
+	text-align: center;
+}
+.coaches__slider {
+	margin: auto;
+}
+.coach__name {
+	font-family: "Montserrat-Bold";
+	font-weight: 700;
+	color: #fff;
+	font-size: 16px;
+	margin: 0;
+	padding-top: 20px;
+	padding-bottom: 15px;
+	text-align: center;
+}
+.coach__description {
+	font-family: "Montserrat-Regular";
+	color: rgba(255, 255, 255, 0.5);
+	font-size: 15px;
+	line-height: 20px;
+	text-align: center;
+}
+.coach__image-wrapper {
+	width: 250px;
+	margin: auto;
+}
+
+.coaches__swiper-helper {
+	position: relative;
+}
+.coaches__button-next, .coaches__button-prev {
+	position: absolute;
+	top: calc((430px /2) - 20px);
+	z-index: 5;
+}
+
+.coaches__scrollbar {
+	background-color: #fff;
+	height: 10px;
+	width: 290px;
+	margin-top: 30px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 15px;
+}
+
+.coaches__scrollbar .swiper-scrollbar-drag{
+	background-color: #F7931E;
+	height: 10px;
+	border-radius: 0px;
+}
+
+@media (min-width: 768px) {
+	.coaches__title {
+		padding-top: 90px;
+	}
+	.coach__image-wrapper {
+		width: 307px;
+	}
+	.coaches__scrollbar {
+		width: 482px;
+	}
+	.coaches {
+		padding-bottom: 90px;
+	}
+}
+
+@media (min-width: 1024px) {
+	.coaches__button-next {
+		display: block;
+		right: -50px;
+	}
+	.coaches__button-prev {
+		display: block;
+		left: -50px;
+	}
+}
+
+@media (min-width: 1366px) {
+	.coaches__scrollbar {
+		width: 1000px;
+	}
+	.coaches__button-next {
+		display: block;
+		right: -20px;
+	}
+	.coaches__button-prev {
+		display: block;
+		left: -20px;
+	}
+}
+
+@media (min-width: 1920px) {
+	.coaches {
+		padding-bottom: 90px;
+	}
+}

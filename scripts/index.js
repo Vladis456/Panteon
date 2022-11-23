@@ -73,3 +73,44 @@ new Swiper(".gallery__room-slider", {
 		}
 	}
 }) 
+
+new Swiper(".coaches__slider", {
+	slidesPerView: 1.2,
+	spaceBetween: 30,
+	scrollbar: {
+		el: ".coaches__scrollbar",
+		draggable: true
+	},
+	navigation: {
+    nextEl: '.coaches__button-next',
+    prevEl: '.coaches__button-prev',
+  },
+	breakpoints: {
+		374: {
+			slidesPerView: 1.2,
+			
+		},
+		424: {
+			slidesPerView: 1.4,
+		},
+		599: {
+			slidesPerView: 1.6,
+		},
+		767: {
+			slidesPerView:2,
+		},
+		1023: {
+			slidesPerView:2.3,
+		},
+		1365: {
+			slidesPerView: 2.6,
+		},
+		1500: {
+			spaceBetween:0,
+			slidesPerView: 3,
+		},
+		2000: {
+			slidesPerView: 4,
+		},
+	}
+})
